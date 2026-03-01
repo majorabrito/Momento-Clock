@@ -6,6 +6,7 @@ body{
 h1{
     text-align: center;
     padding: 20px 0px 10px;
+    font-size: 3cap;
 }
 
 hr {
@@ -21,6 +22,7 @@ hr {
  background-color:#CBC5C1;
  border-radius: 5px;
  border: 2px solid #A2AAB0;
+ font-size: 85%;
 }
 
 .container {
