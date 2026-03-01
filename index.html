@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>Momento Clock 🕰</title>
 </head>
 <body>
     <div class="container">
-  <h1>Momento Clock</h1>
+  <h1>Momento Clock ⏰</h1>
 
-<select class="Choose-city">
+<select class="choose-city">
     <option>Choose a city...</option>
     <option value="">London 🇬🇧</option>
     <option value="">Shanghái 🇬🇧</option>
@@ -20,32 +23,40 @@
 </select>
 
 <div class="city">
-    <h2>Caracas</h2>
-<div class="date">March 1st 2026</div>
-<div class="hour">05:31:26 PM</div>
+   <div> <h2>Caracas</h2>
+    <div class="date">March 1st 2026</div>
+</div>
+    <div class="time">05:31:26 <span class="pm-am">PM</span></div>
 </div>
 
+<hr>
+
 <div class="city">
+    <div>
     <h2>Berlin</h2>
 <div class="date">March 1st 2026</div>
-<div class="hour">05:31:26 PM</div>
-</div>
 
+</div><div class="time">05:31:26 <span class="pm-am">PM</span></div>
+</div>
+<hr>
 <div class="city">
-    <h2>Tokyo</h2>
+    <div><h2>Tokyo</h2>
 <div class="date">March 1st 2026</div>
-<div class="hour">05:31:26 PM</div>
 </div>
-
+<div class="time">05:31:26 <span class="pm-am">PM</span></div>
+</div>
+<hr>
 <div class="city">
-    <h2>Toronto</h2>
+    <div><h2>Toronto</h2>
 <div class="date">March 1st 2026</div>
-<div class="hour">05:31:26 PM</div>
+</div>
+<div class="time">05:31:26 <span class="pm-am">PM</span></div>
 </div>
 
 
-  <footer>This project was coded by <a href="https://github.com/majorabrito" target="_blank"> Maria Leira </a>👩🏻‍💻 and is an <a href="https://majorabrito.github.io/Momento-Clock/" target="_blank">open sourced in GitHub</a> </footer>
   </div>
+    <footer>This project was coded by <a href="https://github.com/majorabrito" target="_blank"> <strong>Maria Leira</strong> </a>👩🏻‍💻 and is an <a href="https://majorabrito.github.io/Momento-Clock/" target="_blank">open sourced in GitHub</a> </footer>
+
 </body>
 <script src="src/web.js"></script>
 </html>
