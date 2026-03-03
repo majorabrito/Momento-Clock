@@ -19,14 +19,14 @@ hr {
 .choose-city {
 display: block;
     width: 100%; 
-    max-width: 400px; 
-    margin: 0 auto 30px; 
+    max-width: 450px; 
+    margin: 0 auto; 
     padding: 10px;
     background-color: #ffffff;
     border-radius: 5px;
     border: 2px solid #A2AAB0;
     font-size: 16px;
-
+box-sizing: border-box;
 }
 
 .container {
