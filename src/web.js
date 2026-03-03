@@ -1,4 +1,4 @@
-setInterval(function() {
+function updateTime() {
 
 let caracasElement = document.querySelector("#caracas");
 let caracasDateElement = caracasElement.querySelector(".date");
@@ -8,10 +8,6 @@ let caracasTime= moment().tz("America/Caracas");
 caracasDateElement.innerHTML = caracasTime.format("MMMM Do YYYY");
 caracasTimeElement.innerHTML = caracasTime.format("h:mm:ss:SS[<small>]A[</small>]");
 
-    }, 1);
-
-
-setInterval(function() {
 
 let berlinElement = document.querySelector("#berlin");
 let berlinDateElement = berlinElement.querySelector(".date");
@@ -21,9 +17,7 @@ let berlinTime= moment().tz("Europe/Berlin");
 berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
 berlinTimeElement.innerHTML = berlinTime.format("h:mm:ss:SS [<small>]A[</small>]");
 
-    }, 1);
 
-setInterval(function() {
 
 let tokyoElement = document.querySelector("#tokyo");
 let tokyoDateElement = tokyoElement.querySelector(".date");
@@ -33,9 +27,7 @@ let tokyoTime= moment().tz("Asia/Tokyo");
 tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
 tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss:SS [<small>]A[</small>]");
 
-}, 1);
 
-setInterval(function() {
 
 let torontoElement = document.querySelector("#toronto");
 let torontoDateElement = torontoElement.querySelector(".date");
@@ -44,5 +36,7 @@ let torontoTime= moment().tz("America/Toronto");
 
 torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
 torontoTimeElement.innerHTML = torontoTime.format("h:mm:ss:SS [<small>]A[</small>]");
+};
 
-    }, 1);
+updateTime();
+setInterval(updateTime, 1);
