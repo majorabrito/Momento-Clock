@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -22,16 +25,16 @@
     <option value="">São Paulo 🇬🇧</option>
 </select>
 
-<div class="city">
+<div class="city" id="caracas">
    <div> <h2>Caracas</h2>
-    <div class="date">March 1st 2026</div>
+    <div class="date"></div>
 </div>
-    <div class="time">05:31:26 <span class="pm-am">PM</span></div>
+    <div class="time"></div>
 </div>
 
 <hr>
 
-<div class="city">
+<div class="city" id="berlin">
     <div>
     <h2>Berlin</h2>
 <div class="date">March 1st 2026</div>
@@ -39,14 +42,14 @@
 </div><div class="time">05:31:26 <span class="pm-am">PM</span></div>
 </div>
 <hr>
-<div class="city">
+<div class="city" id="tokyo">
     <div><h2>Tokyo</h2>
 <div class="date">March 1st 2026</div>
 </div>
 <div class="time">05:31:26 <span class="pm-am">PM</span></div>
 </div>
 <hr>
-<div class="city">
+<div class="city" id="toronto">
     <div><h2>Toronto</h2>
 <div class="date">March 1st 2026</div>
 </div>

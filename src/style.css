@@ -1,5 +1,5 @@
 body{
-    background-color: #CBC5C1;
+    background-color: #F5F5FC;
    font-family: "Roboto", sans-serif;;
 }
 
@@ -19,14 +19,14 @@ hr {
 .choose-city {
  padding:7px 380px 7px 2px;
  margin-bottom: 30px;
- background-color:#CBC5C1;
+ background-color:#ffffff;
  border-radius: 5px;
  border: 2px solid #A2AAB0;
  font-size: 85%;
 }
 
 .container {
-    background-color:#EBECED;
+    background-color:#FFFFFF;
     text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -61,10 +61,11 @@ h2 {
     padding-top: 15px;
 }
 
-.pm-am  {
-     font-size:small;
-vertical-align: middle;
+.time small {
+   font-size: 0.5em; 
+  vertical-align: middle; 
 }
+
 
 footer{
     text-align: center;
