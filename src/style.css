@@ -16,7 +16,6 @@ hr {
     margin: 10px 30px;
 }
 
-
 .choose-city {
 display: block;
     width: 100%; 
@@ -27,17 +26,18 @@ display: block;
     border-radius: 5px;
     border: 2px solid #A2AAB0;
     font-size: 16px;
+
 }
 
 .container {
     background-color:#FFFFFF;
-    text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     max-width: 600px; 
   width: 95%;        
   margin: 20px auto;
-  padding-bottom: 30px;
+ padding-bottom: 5px;
+     
 }
 
 .city {
@@ -60,17 +60,22 @@ h2 {
     text-align: start ;
 }
 
+.all-cities-link {
+    display: block;
+    margin-top: 10px;
+}
+
 .time {
     font-weight: bolder;
     font-size:30px;
     padding-top: 15px;
+    vertical-align: middle; 
 }
 
 .time small {
    font-size: 0.5em; 
   vertical-align: middle; 
 }
-
 
 footer{
     text-align: center;
