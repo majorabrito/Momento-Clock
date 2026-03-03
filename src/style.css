@@ -16,13 +16,17 @@ hr {
     margin: 10px 30px;
 }
 
+
 .choose-city {
- padding:7px 380px 7px 2px;
- margin-bottom: 30px;
- background-color:#ffffff;
- border-radius: 5px;
- border: 2px solid #A2AAB0;
- font-size: 85%;
+display: block;
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto 30px; 
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #A2AAB0;
+    font-size: 16px;
 }
 
 .container {
@@ -31,25 +35,26 @@ hr {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     max-width: 600px; 
-  width: 90%;        
-  margin: 0 auto;
+  width: 95%;        
+  margin: 20px auto;
   padding-bottom: 30px;
 }
 
 .city {
     display: flex;
     justify-content: space-between;
-        margin: 0 35px;
+    align-items: center;
+        margin: 20px 35px;
 }
 
 h2 {
     margin:7px 0;
-            font-size:33px;
+            font-size:26px;
             text-align: start ;
 }
 
 .date {
-    font-size:12px;
+    font-size:13px;
      font-weight: 400;
     opacity: 0.5;
     text-align: start ;
@@ -57,7 +62,7 @@ h2 {
 
 .time {
     font-weight: bolder;
-    font-size:35px;
+    font-size:30px;
     padding-top: 15px;
 }
 
