@@ -57,7 +57,7 @@ citiesElement.innerHTML = `
     <h2>${cityName}</h2>
     <div class="date">${cityTime.format("MMMM Do YYYY")}
     <br>
-    <a href="/" class="all-cities-link">All cities</a>
+    <a href="index.html" class="all-cities-link">All cities</a>
     </div>
 </div>
     <div class="time">${cityTime.format("h:mm:ss")}
