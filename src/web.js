@@ -36,7 +36,30 @@ let torontoTime= moment().tz("America/Toronto");
 
 torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
 torontoTimeElement.innerHTML = torontoTime.format("h:mm:ss:SS [<small>]A[</small>]");
+
+
 };
+
+function updateCity(event){
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+let citiesElement = document.querySelector("#cities-container");
+let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+citiesElement.innerHTML = `
+<div class="city">
+   <div>
+    <h2>${cityName}</h2>
+    <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+</div>
+    <div class="time">${cityTime.format("h:mm:ss")}
+    <small>${cityTime.format("A")}</small></div>
+</div>`;
+}
 
 updateTime();
 setInterval(updateTime, 1);
+
+let citySelectElement = document.querySelector("#choose-city");
+citySelectElement.addEventListener("change", updateCity);
+
+setInterval(updateCity, 1);
