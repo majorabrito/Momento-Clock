@@ -41,7 +41,12 @@ torontoTimeElement.innerHTML = torontoTime.format("h:mm:ss:SS [<small>]A[</small
 };
 
 function updateCity(event){
+
     let cityTimeZone = event.target.value;
+
+    if (cityTimeZone === "current" ) {
+    cityTimeZone = moment.tz.guess();
+}
     let cityTime = moment().tz(cityTimeZone);
 let citiesElement = document.querySelector("#cities-container");
 let cityName = cityTimeZone.replace("_", " ").split("/")[1];
